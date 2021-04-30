@@ -149,7 +149,12 @@ nav a:hover {
 }
 
 .drink {
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0.5rem;
+  width: 100%;
 }
 
 .drink__product {
@@ -216,6 +221,7 @@ nav a:hover {
 }
 
 .layer__color {
+  flex: 0 0 1rem;
   width: 1rem;
   height: 1rem;
   margin-right: 0.5rem;
@@ -226,8 +232,6 @@ nav a:hover {
 }
 
 .layer__label {
-  height: 1rem;
-
   line-height: 1rem;
 }
 
@@ -255,6 +259,12 @@ nav a:hover {
 .contacts__map {
   max-width: 90%;
   height: auto;
+}
+
+@media (min-width: 576px) {
+  .drink {
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -294,5 +304,9 @@ nav a:hover {
     padding-top: 4rem;
 
     text-align: center;
+  }
+
+  .drink {
+    width: 33.333%;
   }
 }
