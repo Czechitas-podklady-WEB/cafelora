@@ -237,7 +237,7 @@ nav a:hover {
 
 .gallery {
   padding-top: 0;
-  height: 100vh;
+  min-height: 100vh;
 
   color: white;
   background-image: url('./img/gallery.jpg');
