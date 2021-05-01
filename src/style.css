@@ -177,7 +177,7 @@ nav a:hover {
 }
 
 .drink__cup--selected img {
-  display: none;
+  visibility: hidden;
 }
 
 .drink__info {
