@@ -6,41 +6,23 @@ module.exports = {
   entry: './src/index.js',
   devtool: 'eval-source-map',
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'public'),
     filename: 'bundle.js',
+    assetModuleFilename: 'img/[name]-[hash:6].[ext]'
   },
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    writeToDisk: true,
+    static: path.join(__dirname, 'public'),
   },
   module: {
     rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env'],
-          },
-        },
-      },
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(png|jpe?g|svg)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name]-[hash:6].[ext]',
-              outputPath: 'img',
-            },
-          },
-        ],
-      },
+        test: /\.(png|jpe?g|svg|gif)$/,
+        type: 'asset/resource'
+      }
     ],
   },
   plugins: [
