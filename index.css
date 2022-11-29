@@ -1,0 +1,207 @@
+.banner {
+  padding-top: 0;
+
+  background-image: url("./img/beans.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+
+.banner__content {
+  padding-top: 30rem;
+  padding-bottom: 3rem;
+
+  text-align: center;
+}
+
+.banner__content p {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+  .banner {
+    height: 600px;
+
+    background-position: top left;
+  }
+
+  .banner__content {
+    width: 30%;
+
+    margin-left: 65%;
+    padding-top: 4rem;
+
+    text-align: center;
+  }
+}
+
+.menu-intro {
+  max-width: 20rem;
+  margin: 0 auto 0 auto;
+  text-align: center;
+}
+
+.drinks-list {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(20rem, 1fr) );
+  justify-content: center;
+  justify-items: center;
+  grid-gap: 1rem;
+
+  margin: 4rem 0;
+}
+
+.order-detail {
+  margin: 2rem auto 6rem auto;
+  padding: 1rem 2rem;
+  max-width: 20rem;
+  text-align: center;
+
+  background-color: #ea946f;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #444;
+}
+
+
+.drink {
+  width: 20rem;
+}
+
+.drink__product {
+  display: flex;
+}
+
+.drink__cup {
+  width: 9rem;
+  height: 9rem;
+}
+
+.drink__cup img {
+  width: 9rem;
+  height: 9rem;
+}
+
+.drink__info {
+  margin-left: 1rem;
+}
+
+.drink__controls {
+  margin-top: 1rem;
+
+  text-align: center;
+}
+
+.order-btn {
+  width: 10rem;
+  padding: 0.5rem 1rem;
+
+  color: white;
+  background-color: #ea946f;
+  border: none;
+  box-shadow: 0 0 5px #444;
+  border-radius: 1rem;
+
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.order-btn--ordered {
+  background-color: #773d24;
+}
+
+.order-btn:hover {
+  transform: scale(1.1);
+}
+
+.order-btn:focus {
+  outline: none;
+}
+
+.order-btn:active {
+  background-color: #e67e51;
+}
+
+
+.layer {
+  display: flex;
+  padding: 0.25rem;
+}
+
+.layer__color {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+  border-radius: 0.5rem;
+
+  background-color: brown;
+  box-shadow: 0 0 5px #333;
+}
+
+.layer__label {
+  height: 1rem;
+
+  line-height: 1rem;
+}
+
+
+.gallery {
+  min-height: 100vh;
+
+  color: white;
+  background-image: url("./img/gallery.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+
+  display: flex;
+  align-items: center;
+}
+
+.gallery__content {
+  height: 100%;
+  padding: 2rem 3rem;
+  margin: 3rem 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+}
+
+.gallery__cols {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery__col {
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .gallery__cols {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.contact__address {
+  margin: 2rem;
+  text-align: center;
+}
+
+.contact__hours {
+  margin-bottom: 4rem;
+}
+
+.contact__hours td {
+  padding: 0.25rem;
+}
+
+.contact__map {
+  width: 100%;
+  height: auto;
+}
