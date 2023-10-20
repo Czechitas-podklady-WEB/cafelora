@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  margin: 0;
+
+  background-color: #e67646;
+  background-image: url("./img/spots.png");
+
+  color: white;
+}
+
+section {
+  padding-top: 2rem;
+}
+
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+h1,
+h2 {
+  margin-bottom: 1rem;
+
+  font-family: "Great Vibes", fantasy;
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+a {
+  color: white;
+}
+
+.page {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}

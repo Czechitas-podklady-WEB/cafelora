@@ -1,17 +1,10 @@
-<!DOCTYPE html>
-<html lang="cs">
+import { render } from '@czechitas/render';
+import '../global.css';
+import './index.css';
+import './order.css';
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="objednavka.css" />
-
-  <title>Café Lóra</title>
-</head>
-
-<body cz-shortcut-listen="true">
-  <div id="app">
+document.querySelector('#root').innerHTML = render(
+  <div className="page">
     <div className="page">
       <header>
         <div className="header__content container">
@@ -30,14 +23,20 @@
           <p className="empty-order empty-order--hide">Zatím nemáte nic objednáno</p>
           <div className="order__items">
             <div className="order-item">
-              <img src="https://cafelora.kodim.app/assets/cups/vienna-coffee.png" className="order-item__image">
+              <img
+                src="https://cafelora.kodim.app/assets/cups/vienna-coffee.png" 
+                className="order-item__image"
+              />
               <div className="order-item__name">
                 Vídeňská káva
               </div>
             </div>
 
             <div className="order-item">
-              <img src="https://cafelora.kodim.app/assets/cups/chocolate-milk.png" className="order-item__image">
+              <img 
+                src="https://cafelora.kodim.app/assets/cups/chocolate-milk.png" 
+                className="order-item__image"
+              />
               <div className="order-item__name">
                 Čokoláda s mlékem
               </div>
@@ -55,8 +54,4 @@
       </footer>
     </div>
   </div>
-
-
-</body>
-
-</html>
+);
