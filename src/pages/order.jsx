@@ -24,21 +24,21 @@ document.querySelector('#root').innerHTML = render(
           <div className="order__items">
             <div className="order-item">
               <img
-                src="https://cafelora.kodim.app/assets/cups/vienna-coffee.png" 
+                src="/cups/espresso.png" 
                 className="order-item__image"
               />
               <div className="order-item__name">
-                Vídeňská káva
+                Espresso
               </div>
             </div>
 
             <div className="order-item">
               <img 
-                src="https://cafelora.kodim.app/assets/cups/chocolate-milk.png" 
+                src="/cups/doppio.png" 
                 className="order-item__image"
               />
               <div className="order-item__name">
-                Čokoláda s mlékem
+                Doppio
               </div>
             </div>
           </div>

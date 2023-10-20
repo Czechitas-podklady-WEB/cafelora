@@ -39,7 +39,7 @@ document.querySelector('#root').innerHTML = render(
             <div className="drink">
               <div className="drink__product">
                 <div className="drink__cup">
-                  <img src="https://cafelora.kodim.app/assets/cups/espresso.png" />
+                  <img src="/cups/espresso.png" />
                 </div>
                 <div className="drink__info">
                   <h3>Espresso</h3>
@@ -59,7 +59,7 @@ document.querySelector('#root').innerHTML = render(
             <div className="drink">
               <div className="drink__product">
                 <div className="drink__cup">
-                  <img src="https://cafelora.kodim.app/assets/cups/doppio.png" />
+                  <img src="/cups/doppio.png" />
                 </div>
                 <div className="drink__info">
                   <h3>Doppio</h3>
@@ -79,7 +79,7 @@ document.querySelector('#root').innerHTML = render(
             <div className="drink">
               <div className="drink__product">
                 <div className="drink__cup">
-                  <img src="https://cafelora.kodim.app/assets/cups/lungo.png" />
+                  <img src="/cups/lungo.png" />
                 </div>
                 <div className="drink__info">
                   <h3>Lungo</h3>
