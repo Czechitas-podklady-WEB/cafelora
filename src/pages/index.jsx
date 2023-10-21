@@ -49,11 +49,12 @@ document.querySelector('#root').innerHTML = render(
                   </div>
                 </div>
               </div>
-              <div className="drink__controls">
+              <form className="drink__controls">
+                <input type="hidden" className="order-id" value="0" />
                 <button className="order-btn">
                   Objednat
                 </button>
-              </div>
+              </form>
             </div>
 
             <div className="drink">
@@ -69,11 +70,12 @@ document.querySelector('#root').innerHTML = render(
                   </div>
                 </div>
               </div>
-              <div className="drink__controls">
+              <form className="drink__controls">
+                <input type="hidden" className="order-id" value="1" />
                 <button className="order-btn">
                   Objednat
                 </button>
-              </div>
+              </form>
             </div>
 
             <div className="drink">
@@ -93,11 +95,12 @@ document.querySelector('#root').innerHTML = render(
                   </div>
                 </div>
               </div>
-              <div className="drink__controls">
+              <form className="drink__controls">
+                <input type="hidden" className="order-id" value="2" />
                 <button className="order-btn">
                   Objednat
                 </button>
-              </div>
+              </form>
             </div>
           </div>
 
