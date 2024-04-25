@@ -1,7 +1,7 @@
+/* Header */
 header {
   padding: 1rem 0 1rem 0;
   height: 5rem;
-
   background-color: #301a1a;
 }
 
@@ -13,7 +13,6 @@ header {
 .site-logo {
   width: 180px;
   height: 50px;
-
   background-image: url("./img/site-logo.png");
   background-size: contain;
 }
@@ -26,10 +25,8 @@ header {
 
 nav a {
   border-bottom: 1px solid transparent;
-
   text-decoration: none;
   text-transform: uppercase;
-
   margin: 1rem;
 }
 
@@ -40,9 +37,7 @@ nav a:hover {
 .rollout-nav {
   width: 10rem;
   padding: 1rem;
-
   background-color: #301a1a;
-
   z-index: 1;
 }
 
@@ -63,11 +58,9 @@ nav a:hover {
   height: 3rem;
   padding: 0;
   border: none;
-
   background-color: transparent;
   background-image: url("./img/menu.png");
   background-size: contain;
-
   cursor: pointer;
 }
 
@@ -82,7 +75,6 @@ nav a:hover {
 
   .rollout-nav a {
     display: inline-block;
-
     margin-top: 0rem;
     margin-bottom: 0rem;
   }
@@ -101,32 +93,28 @@ nav a:hover {
 
   .banner__content {
     width: 30%;
-
     margin-left: 65%;
     padding-top: 4rem;
-
     text-align: center;
   }  
 }
 
-
+/* Footer */
 footer {
   padding: 2rem 0;
-
   background-color: #301a1a;
 }
 
 .footer__content {
   max-width: 25rem;
   margin: 0 auto;
-
   font-size: small;
   text-align: center;
 }
 
+/* Banner */
 .banner {
   padding-top: 0;
-
   background-image: url("./img/beans.jpg");
   background-size: cover;
   background-position: top center;
@@ -135,7 +123,6 @@ footer {
 .banner__content {
   padding-top: 30rem;
   padding-bottom: 3rem;
-
   text-align: center;
 }
 
@@ -146,20 +133,18 @@ footer {
 @media (min-width: 768px) {
   .banner {
     height: 600px;
-
     background-position: top left;
   }
 
   .banner__content {
     width: 30%;
-
     margin-left: 65%;
     padding-top: 4rem;
-
     text-align: center;
   }
 }
 
+/* Menu */
 .menu-intro {
   max-width: 20rem;
   margin: 0 auto 0 auto;
@@ -167,76 +152,11 @@ footer {
 }
 
 .drinks-list {
-  display: grid;@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway&display=swap");
-
-  * {
-    box-sizing: border-box;
-  }
-  
-  html {
-    font-size: 15px;
-    font-family: "Raleway", sans-serif;
-  }
-  
-  body {
-    margin: 0;
-  
-    background-color: #e67646;
-    background-image: url("./img/spots.png");
-  
-    color: white;
-  }
-  
-  section {
-    padding-top: 2rem;
-  }
-  
-  .container {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  @media (min-width: 768px) {
-    .container {
-      max-width: 960px;
-    }
-  }
-  
-  h1,
-  h2 {
-    margin-bottom: 1rem;
-  
-    font-family: "Great Vibes", fantasy;
-    font-weight: 400;
-    font-size: 3rem;
-  }
-  
-  h2 {
-    text-align: center;
-  }
-  
-  h3 {
-    text-transform: uppercase;
-  }
-  
-  a {
-    color: white;
-  }
-  
-  .page {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
-  }
-  
-  
+  display: grid;
   grid-template-columns: repeat( auto-fit, minmax(20rem, 1fr) );
   justify-content: center;
   justify-items: center;
   grid-gap: 1rem;
-
   margin: 4rem 0;
 }
 
@@ -245,13 +165,12 @@ footer {
   padding: 1rem 2rem;
   max-width: 20rem;
   text-align: center;
-
   background-color: #ea946f;
   border-radius: 5px;
   box-shadow: 0 0 3px #444;
 }
 
-
+/* Menu - Drink */
 .drink {
   width: 20rem;
 }
@@ -276,20 +195,17 @@ footer {
 
 .drink__controls {
   margin-top: 1rem;
-
   text-align: center;
 }
 
 .order-btn {
   width: 10rem;
   padding: 0.5rem 1rem;
-
   color: white;
   background-color: #ea946f;
   border: none;
   box-shadow: 0 0 5px #444;
   border-radius: 1rem;
-
   transition: 300ms;
   cursor: pointer;
 }
@@ -310,7 +226,7 @@ footer {
   background-color: #e67e51;
 }
 
-
+/* Drink - Layer */
 .layer {
   display: flex;
   padding: 0.25rem;
@@ -321,27 +237,23 @@ footer {
   height: 1rem;
   margin-right: 0.5rem;
   border-radius: 0.5rem;
-
   background-color: brown;
   box-shadow: 0 0 5px #333;
 }
 
 .layer__label {
   height: 1rem;
-
   line-height: 1rem;
 }
 
-
+/* Gallery */
 .gallery {
   min-height: 100vh;
-
   color: white;
   background-image: url("./img/gallery.jpg");
   background-size: cover;
   background-position: top center;
   background-attachment: fixed;
-
   display: flex;
   align-items: center;
 }
@@ -370,7 +282,7 @@ footer {
   }
 }
 
-
+/* Contact */
 .contact {
   display: flex;
   flex-direction: column;
