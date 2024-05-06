@@ -7,7 +7,7 @@ document.querySelector('#root').innerHTML = render(
   <div className="page">
     <div className="page">
       <header>
-        <div className="header__content container">
+        <div className="container header__content">
           <div className="site-logo"></div>
 
           <nav className="inline-nav">
@@ -18,13 +18,13 @@ document.querySelector('#root').innerHTML = render(
       </header>
 
       <main className="order">
-        <div className="order__content container">
+        <div className="container order__content">
           <h1>Vaše objedávnka</h1>
-          <p className="empty-order empty-order--hide">Zatím nemáte nic objednáno</p>
+          <p className="empty-order">Zatím nemáte nic objednáno</p>
           <div className="order__items">
             <div className="order-item">
               <img
-                src="/cups/espresso.png" 
+                src="/cups/espresso.png"
                 className="order-item__image"
               />
               <div className="order-item__name">
@@ -33,8 +33,8 @@ document.querySelector('#root').innerHTML = render(
             </div>
 
             <div className="order-item">
-              <img 
-                src="/cups/doppio.png" 
+              <img
+                src="/cups/doppio.png"
                 className="order-item__image"
               />
               <div className="order-item__name">
