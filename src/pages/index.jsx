@@ -150,7 +150,7 @@ document.querySelector('#root').innerHTML = render(
               <tr><td>Sobota</td><td>9:00 - 02:00</td></tr>
               <tr><td>Neděle</td><td>9:00 - 02:00</td></tr>
             </table>
-            <iframe src="https://mapy.cz/s/banocofosu" width="100%" height="600" frameBorder="0" title="Café Lóra na mapě."></iframe>
+            <iframe src="https://mapy.cz/s/paloregama" width="100%" height="600" frameBorder="0" title="Café Lóra na mapě."></iframe>
           </div>
         </div>
       </section>
