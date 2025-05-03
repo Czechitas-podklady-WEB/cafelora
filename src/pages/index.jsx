@@ -150,10 +150,7 @@ document.querySelector('#root').innerHTML = render(
               <tr><td>Sobota</td><td>9:00 - 02:00</td></tr>
               <tr><td>Neděle</td><td>9:00 - 02:00</td></tr>
             </table>
-            <img
-              className="contact__map"
-              src="./img/map.png"
-            />
+            <iframe src="https://mapy.cz/s/hovezumoda" width="100%" height="600" frameBorder="0"></iframe>
           </div>
         </div>
       </section>
