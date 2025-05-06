@@ -90,13 +90,6 @@ nav a:hover {
   .nav-btn:focus {
     outline: none;
   }
-
-  .banner__content {
-    width: 30%;
-    margin-left: 65%;
-    padding-top: 4rem;
-    text-align: center;
-  }  
 }
 
 /* Footer */
